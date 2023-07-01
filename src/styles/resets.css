@@ -1,0 +1,20 @@
+/* style général du site */
+
+* {
+    text-decoration: none;
+    list-style: none;
+    font-style: normal;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color : #FF6060
+}
+
+body {
+    min-width: 320px;
+    max-width: 1400px;
+}
+
+a{
+    color: black;
+}

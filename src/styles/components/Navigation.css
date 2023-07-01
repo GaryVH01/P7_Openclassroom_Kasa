@@ -1,0 +1,14 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation li {
+    font-size: 24px;
+    margin: 20px;
+    color: #FF6060;
+}
+
+.navigation li:hover {
+    font-weight: bold;
+}
