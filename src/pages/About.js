@@ -1,10 +1,13 @@
 import React from "react";
 import Header from "../components/Header";
+import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 
 const About = () => {
   return (
-    <div>
+    <div className="about">
       <Header />
+      <Banner />
       <h1>A propos</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores maxime
@@ -28,6 +31,7 @@ const About = () => {
         tempora quis id? Qui architecto repudiandae ex eius tempore pariatur,
         sint beatae eos, recusandae, ipsa quis illo. Consequuntur, nulla ipsum.
       </p>
+      <Footer />
     </div>
   );
 };

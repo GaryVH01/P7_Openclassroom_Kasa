@@ -1,0 +1,13 @@
+.imgBanner {
+    width: 100%;
+    object-fit: cover;
+    height: 260px;
+    border-radius: 30px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
