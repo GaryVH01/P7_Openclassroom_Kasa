@@ -1,0 +1,10 @@
+.card {
+    background-color: #FF6060;
+    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%); */
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    flex: 1 0 30%;
+}
+
+;

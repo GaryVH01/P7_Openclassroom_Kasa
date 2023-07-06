@@ -4,7 +4,11 @@ import "../styles/components/BannerHome.css";
 const BannerHome = () => {
   return (
     <div className="bannerHome">
-      <img src="./Carrousel.png" alt="Intérieur d'un appartement" />
+      <img
+        className="imgBannerHome"
+        src="./banner.png"
+        alt="photo d'accueil du site. Falaise et mer en contre bas."
+      />
     </div>
   );
 };

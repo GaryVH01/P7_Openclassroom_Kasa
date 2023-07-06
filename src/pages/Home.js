@@ -1,14 +1,13 @@
 import React from "react";
-import Header from "../components/Header";
 import BannerHome from "../components/BannerHome";
-import Footer from "../components/Footer";
+import "../styles/pages/Home.css";
+import CardsGalerie from "../components/CardsGalerie";
 
 const Home = () => {
   return (
     <div>
-      <Header />
       <BannerHome />
-      <Footer />
+      <CardsGalerie />
     </div>
   );
 };

@@ -1,4 +1,8 @@
-.bannerHome {
-    display: flex;
-    justify-content: center;
+.imgBannerHome {
+    width: 90%;
+    object-fit: cover;
+    height: 260px;
+    border-radius: 30px;
+    margin-right: 60px;
+    margin-left: 60px;
 }
