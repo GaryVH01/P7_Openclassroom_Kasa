@@ -1,12 +1,15 @@
 import React from "react";
 import "../styles/components/DropDown.css";
-// import { useState } from "react";
+// import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const DropdDown = () => {
   return (
     <div className="accordion">
       <div className="contentBox">
         <div className="label">Fiabilité</div>
+        <FontAwesomeIcon icon={faChevronDown} className="faChevronDown" />
         <div className="content">
           Les annonces postées sur Kasa garantissent une fiabilité totale. Les
           photos sont conformes aux logements, et toutes les informations sont
@@ -15,6 +18,7 @@ const DropdDown = () => {
       </div>
       <div className="contentBox">
         <div className="label">Respect</div>
+        <FontAwesomeIcon icon={faChevronDown} className="faChevronDown" />
         <div className="content">
           La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
           comportement discriminatoire ou de perturbation du voisinage
@@ -22,6 +26,7 @@ const DropdDown = () => {
         </div>
       </div>
       <div className="contentBox">
+        <FontAwesomeIcon icon={faChevronDown} className="faChevronDown" />
         <div className="label">Service</div>
         <div className="content">
           Nos équipes se tiennent à votre disposition pour vous fournir une
@@ -30,6 +35,7 @@ const DropdDown = () => {
         </div>
       </div>
       <div className="contentBox">
+        <FontAwesomeIcon icon={faChevronDown} className="faChevronDown" />
         <div className="label">Sécurité</div>
         <div className="content">
           La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que
