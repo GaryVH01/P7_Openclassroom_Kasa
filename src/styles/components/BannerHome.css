@@ -1,8 +1,28 @@
 .imgBannerHome {
-    width: 90%;
     object-fit: cover;
     height: 260px;
+    width: 90%;
     border-radius: 30px;
     margin-right: 60px;
     margin-left: 60px;
+    filter: brightness(0.7);
+}
+
+.bannerHome h1 {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    font-size: 48px;
+    font-weight: 500;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    bottom: 40%;
+}
+
+.bannerHome {
+    position: relative;
+    width: 100%;
+    display: flex;
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
-import "../styles/components/AccordionLarge.css";
+import "./AccordionLarge.css";
 
 const Accordion = (props) => {
   const [isActive, setIsActive] = useState(false);

@@ -1,6 +1,6 @@
 import React from "react";
-import Banner from "../components/Banner";
-import DropdDown from "../components/DropdDown";
+import Banner from "../components/BannerAbout";
+// import DropdDown from "../components/DropdDown";
 import "../styles/pages/About.css";
 import AccordionLarge from "../components/AccordionLarge";
 

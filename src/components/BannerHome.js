@@ -4,10 +4,11 @@ import "../styles/components/BannerHome.css";
 const BannerHome = () => {
   return (
     <div className="bannerHome">
+      <h1>Chez vous, partout et ailleurs.</h1>
       <img
         className="imgBannerHome"
         src="./banner.png"
-        alt="photo d'accueil du site. Falaise et mer en contre bas."
+        alt="Falaise et mer en contre bas."
       />
     </div>
   );
