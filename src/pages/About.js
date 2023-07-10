@@ -1,30 +1,16 @@
 import React from "react";
-import Banner from "../components/BannerAbout";
-// import DropdDown from "../components/DropdDown";
+import Banner from "../components/Banner";
 import "./About.css";
-import AccordionLarge from "../components/AccordionLarge";
+import Accordion from "../components/Accordion";
+import data from "../assets/about.json";
 
 const About = () => {
   return (
     <div className="about">
-      <Banner />
-      {/* <DropdDown /> */}
-      <AccordionLarge
-        title="Fiabilité"
-        body="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
-      />
-      <AccordionLarge
-        title="Respect"
-        body="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
-      />
-      <AccordionLarge
-        title="Service"
-        body="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."
-      />
-      <AccordionLarge
-        title="Sécurité"
-        body="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
-      />
+      <Banner src="./about.png" />
+      {data.map((content) => (
+        <Accordion title={content.title} description={content.description} />
+      ))}
     </div>
   );
 };

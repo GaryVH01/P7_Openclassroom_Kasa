@@ -1,7 +1,7 @@
 import React, { useState } from "react"; //import du hook useState depuis React
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; //importation de la librairie Fontawesome
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons"; //Importation d'icônes spécifiques
-import "./AccordionLarge.css";
+import "./Accordion.css";
 
 const Accordion = (props) => {
   const [isActive, setIsActive] = useState(false);
@@ -18,7 +18,7 @@ const Accordion = (props) => {
           )}
         </div>
       </div>
-      {isActive && <div className="accordion-content">{props.body}</div>}
+      {isActive && <div className="accordion-content">{props.description}</div>}
     </div>
   );
 };

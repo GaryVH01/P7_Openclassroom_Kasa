@@ -1,6 +1,6 @@
 .accordion-item {
     max-width: 1000px;
-    margin: 2rem auto;
+    margin: 30px auto;
     background-color: #f6f6f6;
     border-radius: 0 0 5px 5px;
 }
@@ -20,13 +20,14 @@
 
 .accordion-title,
 .accordion-content {
-    padding: 1rem;
+    padding: 10px 10px;
 }
 
 .accordion-content {
     color: #ff6060;
     font-size: 24px;
     font-weight: 300;
+    padding: 20px;
 
 }
 

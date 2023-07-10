@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     margin: 10px 80px;
+    align-items: center;
 }
 
 .contentLeft .title {
@@ -10,8 +11,53 @@
 
 .title h1 {
     font-size: 36px;
+    font-weight: 500;
 }
 
 .title p {
     font-size: 18px;
+    font-weight: 500;
+
+}
+
+.contentRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contentLeft {
+    display: flex;
+    flex-direction: column;
+}
+
+.notation {
+    display: flex;
+    gap: 10px;
+}
+
+.star {
+    color: #FF6060;
+    font-size: 25px;
+
+}
+
+.owner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.owner p {
+    max-width: 100px;
+    color: #FF6060;
+    font-weight: 400;
+}
+
+.ownerImg {
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
 }

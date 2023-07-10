@@ -1,12 +1,12 @@
 import React from "react";
-import BannerHome from "../components/BannerHome";
+import Banner from "../components/Banner";
 import "./Home.css";
 import CardsGalerie from "../components/CardsGalerie";
 
 const Home = () => {
   return (
     <div>
-      <BannerHome />
+      <Banner src="./home.png" title="Chez vous, partout et ailleurs." />
       <CardsGalerie />
     </div>
   );
