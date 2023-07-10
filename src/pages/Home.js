@@ -1,6 +1,6 @@
 import React from "react";
 import BannerHome from "../components/BannerHome";
-import "../styles/pages/Home.css";
+import "./Home.css";
 import CardsGalerie from "../components/CardsGalerie";
 
 const Home = () => {

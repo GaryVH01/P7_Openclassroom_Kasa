@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/pages/Page404.css";
+import "./Page404.css";
 
 const PageNotFind = () => {
   return (

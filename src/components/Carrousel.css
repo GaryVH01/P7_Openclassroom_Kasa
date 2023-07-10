@@ -1,0 +1,15 @@
+.slide {
+    width: 100%;
+    object-fit: cover;
+    height: 360px;
+    border-radius: 30px;
+    margin-right: 80px;
+    margin-left: 80px;
+    /* filter: brightness(0.7); */
+
+}
+
+.carrousel {
+    display: flex;
+    justify-content: center;
+}

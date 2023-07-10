@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/components/BannerAbout.css";
+import "./BannerAbout.css";
 
 const BannerAbout = () => {
   return (

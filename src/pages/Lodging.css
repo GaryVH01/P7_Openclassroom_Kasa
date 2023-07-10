@@ -1,0 +1,17 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 80px;
+}
+
+.contentLeft .title {
+    text-align: left;
+}
+
+.title h1 {
+    font-size: 36px;
+}
+
+.title p {
+    font-size: 18px;
+}
