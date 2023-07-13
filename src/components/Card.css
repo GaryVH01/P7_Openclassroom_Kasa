@@ -1,7 +1,17 @@
 .card {
     background-color: #FF6060;
     display: flex;
-    /* width: 240px; */
+    height: 340px;
+    /* width: 340px; */
+    margin: 10px;
+    flex: 1 0 30%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.cardLink {
+    display: flex;
+    /* width: 340px; */
     height: 340px;
     margin: 10px;
     flex: 1 0 30%;
@@ -37,14 +47,21 @@
     transform: scale(1.025);
     transition: transform 200ms ease-in-out;
     opacity: 0.8;
+    box-shadow: 10px 10px 25px grey;
 }
 
-.cardLink {
-    display: flex;
-    /* width: 240px; */
-    height: 340px;
-    margin: 10px;
-    flex: 1 0 30%;
-    border-radius: 10px;
-    position: relative;
+
+/* Affichage tablette */
+@media screen and (min-width : 425px) and (max-width : 768px) {
+    .cardLink {
+        flex: 1 0 40%;
+    }
+}
+
+/* Affichage mobile*/
+@media screen and (min-width : 200px) and (max-width : 425px) {
+    .cardLink {
+        flex: 1 0 60%;
+    }
+
 }
