@@ -8,8 +8,12 @@ const About = () => {
   return (
     <div className="about">
       <Banner src="./about.png" />
-      {data.map((content) => (
-        <Accordion title={content.title} description={content.description} />
+      {data.map((content, index) => (
+        <Accordion
+          key={index}
+          title={content.title}
+          description={content.description}
+        />
       ))}
     </div>
   );

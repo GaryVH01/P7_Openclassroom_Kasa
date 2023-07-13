@@ -2,7 +2,13 @@
     display: flex;
     justify-content: space-between;
     margin: 10px 80px;
-    align-items: center;
+    /* align-items: center; */
+}
+
+.contentLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .contentLeft .title {
@@ -12,52 +18,70 @@
 .title h1 {
     font-size: 36px;
     font-weight: 500;
+    padding-bottom: 5px;
 }
 
 .title p {
     font-size: 18px;
-    font-weight: 500;
-
+    font-weight: 400;
 }
 
 .contentRight {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.contentLeft {
-    display: flex;
-    flex-direction: column;
-}
-
-.notation {
+.contentRight .notation {
     display: flex;
     gap: 10px;
+    padding-top: 30px;
 }
 
-.star {
+.contentRight .starTrue {
     color: #FF6060;
     font-size: 25px;
+}
 
+.contentRight .starFalse {
+    color: grey;
+    font-size: 25px;
 }
 
 .owner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0;
 }
 
 .owner p {
     max-width: 100px;
     color: #FF6060;
     font-weight: 400;
+    text-align: end;
 }
 
-.ownerImg {
+.ownerImg,
+.ownerImg img {
     background-color: aliceblue;
     border-radius: 50%;
     width: 60px;
     height: 60px;
+}
+
+.accordions {
+    display: flex;
+    /* margin: 0px 60px; */
+    /* margin-top: -40px; */
+    justify-content: space-around;
+}
+
+.accordionDescription {
+    width: 50%;
+    margin: 0 40px 0 80px;
+}
+
+.accordionEquipment {
+    width: 50%;
+    margin: 0px 80px 0 40px;
 }

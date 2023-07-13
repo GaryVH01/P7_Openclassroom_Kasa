@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 
-const footer = () => {
+const Footer = () => {
   return (
     <div className="footer">
       <svg
@@ -33,9 +33,9 @@ const footer = () => {
           fill="#FFFFFF"
         />
       </svg>
-      <p className="copyright">2020 Kasa. All rights reserved</p>
+      <p className="copyright">© 2020 Kasa. All rights reserved</p>
     </div>
   );
 };
 
-export default footer;
+export default Footer;

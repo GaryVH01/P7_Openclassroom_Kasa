@@ -38,3 +38,13 @@
     transition: transform 200ms ease-in-out;
     opacity: 0.8;
 }
+
+.cardLink {
+    display: flex;
+    /* width: 240px; */
+    height: 340px;
+    margin: 10px;
+    flex: 1 0 30%;
+    border-radius: 10px;
+    position: relative;
+}

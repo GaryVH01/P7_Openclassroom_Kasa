@@ -1,11 +1,11 @@
 import React from "react";
 import "./Tag.css";
 
-const Tag = () => {
+const Tag = (props) => {
   return (
-    <reactFragment className="sectionTag">
-      <div className="tag">tag.name</div>
-    </reactFragment>
+    <div className="sectionTag">
+      <div className="tag"></div>
+    </div>
   );
 };
 

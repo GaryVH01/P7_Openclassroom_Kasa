@@ -1,45 +1,83 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Carrousel from "../components/Carrousel";
 import "./Lodging.css";
 import Tag from "../components/Tag";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; //importation de la librairie Fontawesome
 import { faStar } from "@fortawesome/free-solid-svg-icons"; //Importation d'icônes spécifiques
 import Accordion from "../components/Accordion";
+import data from "../assets/logements.json";
+import { useLocation } from "react-router-dom";
+// import axios from "axios";
 
 const Lodging = () => {
+  const location = useLocation();
+  // console.log(location);
+  // console.log("id de la fiche logement :", location.state.id);
+
+  const [dataFiltered, setdataFiltered] = useState(null);
+
+  useEffect(() => {
+    const apartment = data.find((lodging) => lodging.id === location.state.id);
+    console.log("apartement ciblé", apartment);
+    setdataFiltered(apartment);
+  }, []);
+
+  if (dataFiltered == null) return <div>...Loading</div>;
+
   return (
-    <reactFragment>
-      <Carrousel />
+    <div>
+      <Carrousel pictures={dataFiltered.pictures} />
       <div className="content">
         <div className="contentLeft">
           <div className="title">
-            <h1>Gros titre</h1>
-            <p>Sous-titre</p>
+            <h1>{dataFiltered.title}</h1>
+            <p>{dataFiltered.location}</p>
           </div>
           <div className="tags">
-            <Tag />
-            <Tag />
-            <Tag />
+            {dataFiltered.tags.map((tags) => (
+              <li key={tags} className="tag">
+                {tags}
+              </li>
+            ))}
           </div>
         </div>
         <div className="contentRight">
           <div className="owner">
-            <p>Gary Van-hecke</p>
+            <p>{dataFiltered.host.name}</p>
             <div className="ownerImg">
-              <img src="" alt="" />
+              <img src={dataFiltered.host.picture} alt="" />
             </div>
           </div>
           <div className="notation">
-            <FontAwesomeIcon className="star" icon={faStar} />
-            <FontAwesomeIcon className="star" icon={faStar} />
-            <FontAwesomeIcon className="star" icon={faStar} />
-            <FontAwesomeIcon className="star" icon={faStar} />
-            <FontAwesomeIcon className="star" icon={faStar} />
+            {[1, 2, 3, 4, 5].map((index) => (
+              <FontAwesomeIcon
+                className={
+                  dataFiltered.rating >= index ? "starTrue" : "starFalse"
+                }
+                icon={faStar}
+                key={index}
+              />
+            ))}
           </div>
         </div>
       </div>
-      <Accordion />
-    </reactFragment>
+      <div className="accordions">
+        <div className="accordionDescription">
+          <Accordion
+            title="Description"
+            description={dataFiltered.description}
+          />
+        </div>
+        <div className="accordionEquipment">
+          <Accordion
+            title="Equipements"
+            description={dataFiltered.equipments.map((equipment) => (
+              <li key={equipment}>{equipment}</li>
+            ))}
+          />
+        </div>
+      </div>
+    </div>
   );
 };
 

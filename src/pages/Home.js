@@ -5,7 +5,7 @@ import CardsGalerie from "../components/CardsGalerie";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <Banner src="./home.png" title="Chez vous, partout et ailleurs." />
       <CardsGalerie />
     </div>
