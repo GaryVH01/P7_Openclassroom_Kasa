@@ -2,13 +2,13 @@
     object-fit: cover;
     height: 260px;
     width: 100%;
-    border-radius: 30px;
+    border-radius: 15px;
     margin-right: 80px;
     margin-left: 80px;
     filter: brightness(0.7);
 }
 
-.banner h1 {
+/* .banner h1 {
     display: flex;
     width: 100%;
     position: absolute;
@@ -19,11 +19,62 @@
     color: white;
     justify-content: center;
     bottom: 40%;
+} */
+
+.divTitle {
+    display: flex;
+    align-items: center;
+    height: 260px;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    font-weight: 500;
+    z-index: 1;
+    color: white;
 }
+
+.divTitle h1 {
+    font-size: 48px;
+    font-weight: 500;
+}
+
 
 .banner {
     position: relative;
     width: 100%;
     display: flex;
+    margin-top: 0;
+}
 
+/* Affichage mobile*/
+@media only screen and (min-width : 320px) and (max-width : 600px) {
+
+    .banner,
+    .imgBanner,
+    .divTitle {
+        height: 110px;
+        width: 100%;
+    }
+
+    .imgBanner {
+        margin: 0 20px
+    }
+
+    .divTitle h1 {
+        font-size: 24px;
+        font-weight: 500;
+        margin: 30px;
+    }
+}
+
+@media only screen and (min-width : 601px) and (max-width : 1024px) {
+
+    .divTitle h1 {
+        font-size: 28px;
+    }
+
+
+    .imgBanner {
+        margin: 0 40px
+    }
 }

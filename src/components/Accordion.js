@@ -7,7 +7,7 @@ const Accordion = (props) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="accordion-item">
+    <div className={props.itemCss}>
       <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
         <div>{props.title}</div>
         <div className="faIcons">
@@ -18,7 +18,7 @@ const Accordion = (props) => {
           )}
         </div>
       </div>
-      {isActive && <div className="accordion-content">{props.description}</div>}
+      {isActive && <div className={props.contentCss}>{props.description}</div>}
     </div>
   );
 };

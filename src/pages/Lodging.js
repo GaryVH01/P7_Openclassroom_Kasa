@@ -34,10 +34,8 @@ const Lodging = () => {
             <p>{dataFiltered.location}</p>
           </div>
           <div className="tags">
-            {dataFiltered.tags.map((tags) => (
-              <li key={tags} className="tag">
-                {tags}
-              </li>
+            {dataFiltered.tags.map((tags, index) => (
+              <Tag key={index} tagName={tags} />
             ))}
           </div>
         </div>
@@ -66,11 +64,15 @@ const Lodging = () => {
           <Accordion
             title="Description"
             description={dataFiltered.description}
+            contentCss="accordionContentLodging"
+            itemCss="accordionItemLodging"
           />
         </div>
         <div className="accordionEquipment">
           <Accordion
             title="Equipements"
+            contentCss="accordionContentLodging"
+            itemCss="accordionItemLodging"
             description={dataFiltered.equipments.map((equipment) => (
               <li key={equipment}>{equipment}</li>
             ))}

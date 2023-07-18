@@ -1,3 +1,10 @@
 .logo {
-    width: 200px;
+    width: 210px;
+}
+
+/* Affichage mobile*/
+@media only screen and (min-width : 320px) and (max-width : 600px) {
+    .logo {
+        width: 140px;
+    }
 }

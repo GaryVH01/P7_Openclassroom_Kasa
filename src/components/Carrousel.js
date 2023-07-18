@@ -46,12 +46,8 @@ const Carrousel = (props) => {
       {pictures.map((picture, index) => {
         // fonction map permettant d'afficher toutes les photos récupérées dans le tableau [pictures]
         return (
-          <div className="slide">
-            <img
-              key={index}
-              src={picture}
-              className={getClassname(index)}
-            ></img>
+          <div className="slide" key={index}>
+            <img src={picture} className={getClassname(index)}></img>
           </div>
         );
       })}
