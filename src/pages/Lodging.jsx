@@ -1,5 +1,4 @@
-import React, { useEffect, useState,
-} from "react";
+import React from "react";
 import Carrousel from "../components/Carrousel";
 import "./Lodging.css";
 import Tag from "../components/Tag";
