@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/P7_Openclassroom_Kasa/static/css/main.840c731d.css",
-    "main.js": "/P7_Openclassroom_Kasa/static/js/main.7b6dee29.js",
+    "main.js": "/P7_Openclassroom_Kasa/static/js/main.5d2fa182.js",
     "index.html": "/P7_Openclassroom_Kasa/index.html",
     "main.840c731d.css.map": "/P7_Openclassroom_Kasa/static/css/main.840c731d.css.map",
-    "main.7b6dee29.js.map": "/P7_Openclassroom_Kasa/static/js/main.7b6dee29.js.map"
+    "main.5d2fa182.js.map": "/P7_Openclassroom_Kasa/static/js/main.5d2fa182.js.map"
   },
   "entrypoints": [
     "static/css/main.840c731d.css",
-    "static/js/main.7b6dee29.js"
+    "static/js/main.5d2fa182.js"
   ]
 }
