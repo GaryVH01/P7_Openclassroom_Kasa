@@ -8,8 +8,8 @@ const About = () => {
   return (
     <div className="about">
       <Banner src="./about.png" />
-      <div className="sectionAccordion">
-        {data.map((content, index) => (
+      <div className="sectionAccordion"> {/** On map sur le tableau de données du fichier about.json pour injecter les données avec les props */}
+        {data.map((content, index) => ( 
           <Accordion
             key={index}
             title={content.title}

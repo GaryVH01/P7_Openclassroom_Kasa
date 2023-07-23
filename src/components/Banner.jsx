@@ -5,7 +5,7 @@ const Banner = (props) => {
   return (
     <div className="banner">
       <div className="divTitle">
-        <h1>{props.title}</h1>
+        <h1>{props.title}</h1> {/** On passe des props qui seront appelées dans le composant de la page en question */}
       </div>
       <img
         className="imgBanner"

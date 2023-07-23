@@ -1,11 +1,11 @@
 import React from "react";
-import Card from "../components/Card";
+import Card from "./Card";
 import "./CardsGalerie.css";
 import data from "../assets/logements.json";
 
 console.log(data);
 
-const CardsGalerie = (props) => {
+const CardsGalerie = (props) => { {/** On remonte les props de "Card" et on map le tableau d'appartment au format JSON */}
   return (
     <div className="galerie">
       {data.map((content) => (

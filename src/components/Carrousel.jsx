@@ -18,16 +18,10 @@ const Carrousel = (props) => {
     return "";
   };
 
-  // Fonction CSS permettant d'afficher ou non les chevrons en fonction du nombre de photos dans [pictures]
-  const displayChevrons = () => {
-    if (pictures.length <= 1) return "chevronsHidden";
-    return "chevrons";
-  };
-
   // Fonction pour passer au slide suivant lors du clic sur le chevron droit
   const nextSlide = () => {
-    setSlideIndex((slideIndex + 1) % pictures.length);
-    // console.log(slideIndex);
+    setSlideIndex((slideIndex + 1) % pictures.length); // On précise qu'on veut faire +1 avec limite la longueur du tableau
+    // console.log(slideIndex); // log pour vérifier le numéro de l'index dans l'état local
   };
 
   // Fonction pour revenir au slide précédant lors du clic sur le chevron gauche
@@ -38,7 +32,7 @@ const Carrousel = (props) => {
       return;
     }
     setSlideIndex(slideIndex - 1);
-    console.log(slideIndex); // log pour vérifier le numéro de l'index dans l'état local
+    // console.log(slideIndex); 
   };
 
   return (
@@ -47,27 +41,26 @@ const Carrousel = (props) => {
         // fonction map permettant d'afficher toutes les photos récupérées dans le tableau [pictures]
         return (
           <div className="slide" key={index}>
-            <img src={picture} className={getClassname(index)}></img>
+            <img src={picture} className={getClassname(index)} alt=""></img>
           </div>
         );
       })}
-      <div className={displayChevrons()}>
+      {/* Opérateur ternaire permetttant d'attribuer différentes classes CSS pour l'affichage ou non de la div chevrons */}
+      <button className={pictures.length <= 1 ? "chevronsHidden" : "chevrons" }>
         <FontAwesomeIcon
           icon={faChevronLeft}
           onClick={prevSlide}
           className="chevronLeft"
-          role="button"
         />
         <span className="sliderCounter">
-          {slideIndex + 1}/{pictures.length}
+          {slideIndex + 1}/{pictures.length} {/** Affichage du counter au bas du carroussel*/}
         </span>
         <FontAwesomeIcon
           icon={faChevronRight}
           onClick={nextSlide}
           className="chevronRight"
-          role="button"
         />
-      </div>
+      </button>
     </div>
   );
 };

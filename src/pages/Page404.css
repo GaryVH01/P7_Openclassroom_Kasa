@@ -20,36 +20,53 @@
     text-decoration: underline;
     margin-bottom: 30px;
     color: #FF6060;
+    font-size: 18px;
 }
 
 .backLink:hover {
     font-weight: bold;
 }
 
+/* Affichage tablette*/
+@media only screen and (min-width : 601px) and (max-width : 1024px) {
+    .title {
+        font-size: 120px;
+        margin: 0 20px
+    }
+
+    .error404 {
+        margin: 120px 0;
+    }
+
+    .description {
+        font-size: 20px;
+        text-align: center;
+        color: #FF6060;
+    }
+
+    .backLink {
+        font-size: 16px;
+    }
+}
+
 /* Affichage mobile*/
 @media only screen and (min-width : 320px) and (max-width : 600px) {
-
     .title {
         font-size: 96px;
     }
 
+    .error404 {
+        margin: 120px 0;
+    }
+
     .description {
         font-size: 18px;
-        text-align: center;
-        color: #FF6060;
         max-width: 250px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .backlink {
+    .backLink {
         font-size: 14px;
     }
-
-    .error404 {
-        width: 100%;
-        margin: 120px 0;
-    }
 }
-
-@media only screen and (min-width : 601px) and (max-width : 1024px) {}

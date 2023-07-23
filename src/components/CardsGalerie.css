@@ -7,20 +7,19 @@
     margin: 40px 80px;
 }
 
+/* Affichage talette*/
+@media only screen and (min-width : 601px) and (max-width : 1024px) {
+    .galerie {
+        margin: 20px 40px;
+    }
+}
+
 /* Affichage mobile*/
 @media only screen and (min-width : 320px) and (max-width : 600px) {
     .galerie {
-        display: flex;
-        flex-wrap: wrap;
         width: 100%;
         padding: 0;
         margin: 0;
         background-color: white;
-    }
-}
-
-@media only screen and (min-width : 601px) and (max-width : 1024px) {
-    .galerie {
-        margin: 20px 40px;
     }
 }
