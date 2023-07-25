@@ -1,8 +1,8 @@
 import React from "react";
-import Banner from "../components/Banner";
-import "./About.css";
-import Accordion from "../components/Accordion";
-import data from "../assets/about.json";
+import Banner from "components/Banner";
+import "./style.css";
+import Accordion from "components/Accordion";
+import data from "assets/about.json";
 
 const About = () => {
   return (

@@ -1,5 +1,5 @@
 import React, {useState } from "react";
-import "./Carrousel.css";
+import "./style.css";
 
 const Carrousel = (props) => {
   const pictures = props.pictures; // récupération des photos de l'appartement ciblé dans une variable

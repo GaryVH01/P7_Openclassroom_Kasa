@@ -1,5 +1,5 @@
 import React, { useState } from "react"; //importation du hook "useState" depuis React
-import "./Accordion.css";
+import "./style.css";
 
 const Accordion = (props) => {
   const [isActive, setIsActive] = useState(false); //déclaration du state local en false pour que le collapse soit fermé au chargement de la page

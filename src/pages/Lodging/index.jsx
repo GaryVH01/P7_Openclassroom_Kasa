@@ -1,9 +1,9 @@
 import React from "react";
-import Carrousel from "../components/Carrousel";
-import "./Lodging.css";
-import Tag from "../components/Tag";
-import Accordion from "../components/Accordion";
-import data from "../assets/logements.json";
+import Carrousel from "components/Carrousel";
+import "./style.css";
+import Tag from "components/Tag";
+import Accordion from "components/Accordion";
+import data from "assets/logements.json";
 import {Navigate, useParams} from "react-router-dom";
 
 const Lodging = () => {

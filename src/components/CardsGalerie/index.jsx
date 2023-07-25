@@ -1,7 +1,7 @@
 import React from "react";
-import Card from "./Card";
-import "./CardsGalerie.css";
-import data from "../assets/logements.json";
+import Card from "components/Card";
+import "./style.css";
+import data from "assets/logements.json";
 
 console.log(data);
 
