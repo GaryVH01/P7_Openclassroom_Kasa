@@ -49,6 +49,7 @@
     color: #FF6060;
     font-weight: 400;
     text-align: end;
+    font-size: 18px;
 }
 
 .ownerImg,
@@ -77,7 +78,7 @@
 
 .accordions {
     display: flex;
-    margin: 20px 60px;
+    margin: 30px 60px;
     justify-content: space-around;
 }
 
@@ -168,6 +169,7 @@
 
     .contentRight .notation {
         padding-top: 0px;
+        gap: 5px;
     }
 
     .contentRight .starTrue,

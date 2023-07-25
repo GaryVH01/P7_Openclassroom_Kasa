@@ -10,7 +10,7 @@
 }
 
 .navigation li:hover {
-    font-weight: bold;
+    text-decoration: underline;
 }
 
 

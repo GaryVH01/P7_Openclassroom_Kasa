@@ -1,6 +1,4 @@
 import React, { useState } from "react"; //importation du hook "useState" depuis React
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; //importation de la librairie "Fontawesome"
-import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons"; //Importation d'icônes spécifiques
 import "./Accordion.css";
 
 const Accordion = (props) => {
@@ -15,9 +13,9 @@ const Accordion = (props) => {
         <button className="faIcons">
           {/** Opérateur ternaire pour afficher une icône ouvrante ou une icône fermante en fonction du state */}
           {isActive ? (
-            <FontAwesomeIcon icon={faChevronUp} />
+            <i className="fa-solid fa-chevron-up"></i>
           ) : (
-            <FontAwesomeIcon icon={faChevronDown} />
+            <i className="fa-solid fa-chevron-down"></i>
           )}
         </button>
       </div>

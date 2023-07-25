@@ -2,8 +2,6 @@ import React from "react";
 import Carrousel from "../components/Carrousel";
 import "./Lodging.css";
 import Tag from "../components/Tag";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; //importation de la librairie Fontawesome
-import { faStar } from "@fortawesome/free-solid-svg-icons"; //Importation d'icônes spécifiques
 import Accordion from "../components/Accordion";
 import data from "../assets/logements.json";
 import {Navigate, useParams} from "react-router-dom";
@@ -41,13 +39,9 @@ console.log("apartement filtré", apartment);
           </div>
           <div className="notation">
             {[1, 2, 3, 4, 5].map((index) => (
-              <FontAwesomeIcon
-                className={
-                  apartment.rating >= index ? "starTrue" : "starFalse"
-                }
-                icon={faStar}
-                key={index}
-              />
+              <i className={apartment.rating >= index ? "fa-solid fa-star starTrue" : "fa-solid fa-star starFalse"
+            } key={index}>
+              </i>
             ))}
           </div>
         </div>

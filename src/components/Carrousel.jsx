@@ -1,10 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import "./Carrousel.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; //importation de la librairie Fontawesome
-import {
-  faChevronLeft,
-  faChevronRight,
-} from "@fortawesome/free-solid-svg-icons"; //Importation d'icônes spécifiques
 
 const Carrousel = (props) => {
   const pictures = props.pictures; // récupération des photos de l'appartement ciblé dans une variable
@@ -47,19 +42,11 @@ const Carrousel = (props) => {
       })}
       {/* Opérateur ternaire permetttant d'attribuer différentes classes CSS pour l'affichage ou non de la div chevrons */}
       <button className={pictures.length <= 1 ? "chevronsHidden" : "chevrons" }>
-        <FontAwesomeIcon
-          icon={faChevronLeft}
-          onClick={prevSlide}
-          className="chevronLeft"
-        />
+        <i className="fa-solid fa-chevron-left" onClick={prevSlide}></i>
         <span className="sliderCounter">
           {slideIndex + 1}/{pictures.length} {/** Affichage du counter au bas du carroussel*/}
         </span>
-        <FontAwesomeIcon
-          icon={faChevronRight}
-          onClick={nextSlide}
-          className="chevronRight"
-        />
+        <i className="fa-solid fa-chevron-right" onClick={nextSlide}></i>
       </button>
     </div>
   );
