@@ -3,6 +3,12 @@
     justify-content: space-between;
 }
 
+.navigation a.active {
+    text-decoration: underline;
+    color: #FF6060;
+
+}
+
 .navigation li {
     font-size: 24px;
     margin-left: 60px;

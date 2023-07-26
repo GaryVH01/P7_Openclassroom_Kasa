@@ -21,7 +21,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 30px;
+    border-radius: 10px;
     filter: brightness(0.9);
     opacity: 0;
     transition: opacity 600ms;
@@ -80,7 +80,7 @@
     }
 
     .slider {
-        height: 255px;
+        height: 300px;
     }
 
     .sliderCounter {
