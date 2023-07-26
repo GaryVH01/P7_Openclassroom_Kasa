@@ -9,7 +9,7 @@ const Banner = (props) => {
         {/* On passe des props qui seront appelées dans le composant de la page en question */}
       </div>
       <img
-        className="imgBanner"
+        className={props.css ? "imgBanner" : "bigBanner"}
         src={props.src}
         alt="Falaise et mer en contre bas."
       />

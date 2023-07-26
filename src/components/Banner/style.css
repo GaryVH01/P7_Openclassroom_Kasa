@@ -2,7 +2,16 @@
     position: relative;
     width: 100%;
     display: flex;
-    margin-top: 0;
+    margin: 0;
+}
+
+.bigBanner {
+    object-fit: cover;
+    height: 260px;
+    width: 100%;
+    border-radius: 15px;
+    filter: brightness(0.7);
+    margin: 0 80px;
 }
 
 .imgBanner {
@@ -10,9 +19,8 @@
     height: 260px;
     width: 100%;
     border-radius: 15px;
-    margin-right: 80px;
-    margin-left: 80px;
     filter: brightness(0.7);
+    margin: 0 80px
 }
 
 .divTitle {
@@ -33,10 +41,28 @@
     display: flex;
 }
 
+@media only screen and (min-width : 601px) and (max-width : 1024px) {
+
+    .imgBanner {
+        margin: 0 40px
+    }
+
+    .bigBanner {
+        margin: 0 40px
+    }
+
+    .divTitle h1 {
+        font-size: 28px;
+    }
+}
+
 /* Affichage mobile*/
 @media only screen and (min-width : 320px) and (max-width : 600px) {
 
-    .banner,
+    .banner {
+        display: flex;
+    }
+
     .imgBanner,
     .divTitle {
         height: 110px;
@@ -44,29 +70,24 @@
         display: flex;
     }
 
+    .divTitle {
+        justify-content: left;
+    }
+
     .imgBanner {
         margin: 0 20px
+    }
+
+    .bigBanner {
+        width: 100%;
+        margin: 0 20px;
+        overflow: auto;
     }
 
     .divTitle h1 {
         font-size: 24px;
         font-weight: 500;
-        margin: 40px;
+        margin: 30px;
         flex-direction: column;
-        width: 100%;
     }
-}
-
-
-@media only screen and (min-width : 601px) and (max-width : 1024px) {
-    .imgBanner {
-        margin: 0 40px
-    }
-
-    .divTitle h1 {
-        font-size: 28px;
-    }
-
-
-
 }

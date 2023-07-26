@@ -3,6 +3,7 @@
     width: 100%;
 }
 
+
 .sectionAccordion {
     display: flex;
     flex-direction: column;
@@ -11,13 +12,6 @@
     margin: 20px 0;
 }
 
-
-/* .padding {
-    color: #ff6060;
-    font-size: 24px;
-    font-weight: 300;
-    padding: 20px;
-} */
 
 .accordionItemAbout {
     background: #F6F6F6;
@@ -68,5 +62,5 @@
         margin: 10px 0;
     }
 
-    .banner {}
+
 }

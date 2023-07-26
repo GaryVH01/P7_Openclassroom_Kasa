@@ -6,7 +6,7 @@ import CardsGalerie from "components/CardsGalerie";
 const Home = () => {
   return (
     <div className="home">
-      <Banner src="./home.png" titleLine1="Chez vous," titleLine2=" partout et ailleurs." />
+      <Banner src="./home.png" titleLine1="Chez vous," titleLine2=" partout et ailleurs." css="imgBanner" container="banner"/>
       <CardsGalerie />
     </div>
   );
