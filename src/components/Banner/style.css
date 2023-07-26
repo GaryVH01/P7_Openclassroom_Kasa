@@ -30,6 +30,7 @@
 .divTitle h1 {
     font-size: 48px;
     font-weight: 500;
+    display: flex;
 }
 
 /* Affichage mobile*/
@@ -40,6 +41,7 @@
     .divTitle {
         height: 110px;
         width: 100%;
+        display: flex;
     }
 
     .imgBanner {
@@ -49,7 +51,9 @@
     .divTitle h1 {
         font-size: 24px;
         font-weight: 500;
-        margin: 30px;
+        margin: 40px;
+        flex-direction: column;
+        width: 100%;
     }
 }
 
