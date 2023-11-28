@@ -2,15 +2,17 @@ import React from "react";
 import "./login-signup.css";
 import { useState } from "react";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import { FaRegUser } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { RiLockPasswordLine } from "react-icons/ri";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 
-const LoginForm = () => {
+const SignupForm = () => {
   const [showPassword, setShowPassword] = useState(false);
   // Const to alternate text on the div title
 
+  const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
@@ -19,20 +21,24 @@ const LoginForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3000/login", { email, password })
-      .then((result) => {
-        console.log(result);
-        if (result.data === "success") {
-          navigate("/");
-        }
-      })
-      .catch((err) => console.log(err));
+      .post("http://localhost:3000/signup", { name, email, password })
+      .then((result) => console.log(result));
+    navigate("/login").catch((err) => console.log(err));
   };
 
   return (
     <div>
       <form className="login" onSubmit={handleSubmit}>
-        <h1 className="login_title">SE CONNECTER</h1>
+        <h1 className="login_title">S'INSCRIRE</h1>
+        <div className="login__item">
+          <FaRegUser className="login__item__icon" />
+          <input
+            required="required"
+            type="text"
+            placeholder="Nom d'utilisateur"
+            onChange={(e) => setName(e.target.value)}
+          />
+        </div>
         <div className="login__item">
           <CiMail className="login__item__icon" />
           <input
@@ -67,10 +73,8 @@ const LoginForm = () => {
           </div>
         </div>
         <div>
-          <Link to="/signup">
-            <span className="subtitle-user-status">
-              Vous n'êtes pas encore client?
-            </span>
+          <Link to="/login">
+            <span>Vous êtes déjà client?</span>
           </Link>
         </div>
         <div className="submit">
@@ -81,7 +85,7 @@ const LoginForm = () => {
               handleSubmit(e);
             }}
           >
-            SE CONNECTER
+            S'INSCRIRE
           </button>
         </div>
       </form>
@@ -89,4 +93,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default SignupForm;

@@ -7,7 +7,8 @@ import "settings.css";
 import Header from "components/Header";
 import Footer from "components/Footer";
 import Lodging from "pages/Lodging";
-import Login from "pages/Login/Login";
+import SignupPage from "pages/SignupPage/SignupPage";
+import LoginPage from "pages/LoginPage/LoginPage";
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/lodging/:id" element={<Lodging />} />
         <Route path="*" element={<Page404 />} />
-        <Route path="/log" element={<Login />} />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
       <Footer /> {/** Importation du Footer à la racine */}
     </BrowserRouter>

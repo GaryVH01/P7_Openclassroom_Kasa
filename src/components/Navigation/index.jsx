@@ -15,7 +15,7 @@ const Navigation = () => {
         <NavLink to="/about">
           <li>A propos</li>
         </NavLink>
-        <NavLink to="/log">
+        <NavLink to="/login">
           <ButtonLog />
         </NavLink>
       </ul>

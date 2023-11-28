@@ -12,6 +12,8 @@
     margin: 30px auto;
     font-weight: 500;
     font-size: 20px;
+    color: #FF6060;
+    /* border-bottom: 2px solid #FF6060; */
 }
 
 .login label,
@@ -67,6 +69,11 @@
     font-size: 20px;
 }
 
+.login a {
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
 
 .submit {
     display: flex;
@@ -86,11 +93,10 @@
     background-color: #FF6060;
 }
 
+
+
 /* TABLETTE */
 @media only screen and (min-width : 601px) and (max-width : 1024px) {}
 
 /* Affichage mobile*/
-@media only screen and (min-width : 320px) and (max-width : 600px) {
-    .login {}
-
-}
+@media only screen and (min-width : 320px) and (max-width : 600px) {}
